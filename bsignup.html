@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$("#f").click(function(){
+  			window.alert("Signed in!!");
+  		});
+  	
+    });
+  </script>
+</head>
+<body style="background-image: url('yes.jpg');background-repeat: no-repeat;background-size: 100%" ng-app="" >
+	
+	<div  style="margin-top: 100px;margin-left: 370px;">
+		<div  style="width: 500px;">
+<div class="card" >
+	<div class="card-header bg-primary"><h3 class="text-white text-center">Sign Up  <i class="fa fa-envelope icon"></i></h3></div></div><br>
+	<div class="card"style="background-color: gray;">
+	<div class="card-body">
+    <form name="form">
+  <b>Email:</b><br>
+  <div class="input-group">
+    <div class="input-group-prepend"><span class="input-group-text "><i class="fa fa-envelope icon"></i></span></div>
+    <input type="email" id="pa" class="form-control" placeholder="Enter your email" name="in3" ng-model="in3" required>
+  </div>
+  <p ng-show="form.in3.$error.required" style="color:red;font-style: italic">Please fill out this field!</p>
+  <p ng-show="form.in3.$error.email" style="color:red;font-style: italic">Invalid email!</p>
+	<b>Password:</b><br>
+	<div class="input-group">
+		<div class="input-group-prepend"><span class="input-group-text "><i class="fa fa-lock icon"></i></span></div>
+		<input type="password" id="pa" class="form-control" placeholder="Enter your password" name="in2" ng-model="in2" ng-keypress="p()"required>
+	</div>
+  <p ng-show="form.in2.$error.required" style="color:red;font-style: italic">Please fill out this field!</p>
+	<input type="checkbox" name="">  Remember me<br>
+  </form>
+	<button class="btn btn-primary btn-sm text-white" href="profile.html" id="f">Sign up</button><br><br>
+</div></div>
+</div>
+</div>
+</body>
+</html>
